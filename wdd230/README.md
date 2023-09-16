@@ -1,2 +1,2 @@
-# Graham Ssendagire's example site
+# graham ssendagire's example site
 ## WDD 230
