@@ -1,0 +1,1 @@
+document.querySelector('#lastmodified').textContent="Last Modification:"+document.lastModified;
