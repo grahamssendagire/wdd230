@@ -1,1 +1,79 @@
-@import url();
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+background {
+    height: 725px;
+    background-color:rgba(239, 12, 220, 0.737);
+    display: none;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto; 
+}
+body {
+    
+    background-color: #fffefff5; 
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0em;
+    font-size: 22px;
+    text-align: left;
+}
+.card-img {
+    display: block;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border: 10px solid #d9c2a3;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 50px auto;
+    width: 60%;
+}
+main section img {
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    margin:0;
+}
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+    background-color:rgba(41, 239, 12, 0.424);
+    padding-bottom: 15px; 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    display: block;
+    padding: 15px;
+}
+
+nav, footer {
+    flex-direction: column;
+}
+
+nav a:hover {
+    text-align: center;
+    background-color: rgba(248, 237, 237, 0.135);
+    color: #fcf5f514;
+    font-size: 85em;   
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}  
+nav a {
+    text-align: center;
+    color: #fcfbfb;
+    text-decoration: none;
+    padding: 35px;
+} 
+footer{
+    background-color:rgba(24, 59, 235, 0.903);
+    padding: 25px 50px;
+    margin-top: 25px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}        
