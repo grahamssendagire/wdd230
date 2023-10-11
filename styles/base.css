@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 background {
+
     height: 725px;
-    background-color:rgba(239, 12, 220, 0.737);
+    background-color:rgba
     display: none;
     max-width: 400px;
     display: block;
     margin: 0 auto; 
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 body {
     
@@ -19,17 +20,18 @@ body {
     text-align: left;
     flex-direction: column;
 }
+
 h1 {
     text-align: center-top;
     font-size: 10px;
     color:blue;
 }
 
-
 h3 {
     text-align: center;
     margin: 0 auto;
     padding: .5em;
+    color:pink;
 }
 h3 + p {
     font-weight: bold;
@@ -42,6 +44,7 @@ h4 {
     margin: 0 auto;
     padding: .5em;
     margin-top: 2px;
+    color:pink;
 }
 main section img {
     box-sizing: border-box;
@@ -53,10 +56,30 @@ ul > li {
     padding: 0; 
     flex-direction: column;
     display:block;
-    color :hsl(347, 56%, 52%);
+    color :yellowgreen
     text-align: center;
     margin: auto;
-    text-decoration:none ;   
+    text-decoration:none;   
+  }
+
+  .card1 {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    list-style-type: none; 
+    padding: .5em;
+    flex-direction: column;
+    display:block;
+  }
+
+  .card2 {
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    list-style-type: none; 
+    padding: .5em;
+    flex-direction: column;
+    display:block;
   }
 h2 {
     text-align: center;
@@ -91,6 +114,9 @@ nav a {
 
 
 .card {
+    display: block;
+    width: 400px;
+    height: 100px;
     padding:5px;
     display: block;
     max-width: 300px;
