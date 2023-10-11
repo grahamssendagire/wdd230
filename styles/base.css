@@ -22,6 +22,7 @@ body {
 h1 {
     text-align: center-top;
     font-size: 10px;
+    color:blue;
 }
 
 
@@ -60,6 +61,7 @@ ul > li {
 h2 {
     text-align: center;
     margin:0;
+    color:blue;
 }
 header {
     display: block;
