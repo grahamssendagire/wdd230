@@ -70,6 +70,7 @@ ul > li {
     padding: .5em;
     flex-direction: column;
     display:block;
+    color:red;
   }
 
   .card2 {
@@ -80,6 +81,7 @@ ul > li {
     padding: .5em;
     flex-direction: column;
     display:block;
+    color:pink;
   }
 h2 {
     text-align: center;
