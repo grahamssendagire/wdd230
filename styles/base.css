@@ -14,7 +14,7 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     text-align: center;
-    padding: 0em;
+    padding: .5em;
     font-size: 20px;
     text-align: left;
     flex-direction: column;
@@ -28,11 +28,35 @@ h1 {
 h3 {
     text-align: center;
     margin: 0 auto;
+    padding: .5em;
+}
+h3 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+  }
+h4 {
+    text-align: center;
+    margin: 0 auto;
+    padding: .5em;
+    margin-top: 2px;
 }
 main section img {
     box-sizing: border-box;
     text-align: center;
 }
+ul > li {
+    box-sizing: border-box;
+    list-style-type: none; 
+    padding: 0; 
+    flex-direction: column;
+    display:block;
+    color :hsl(347, 56%, 52%);
+    text-align: center;
+    margin: auto;
+    text-decoration:none ;   
+  }
 h2 {
     text-align: center;
     margin:0;
@@ -70,8 +94,7 @@ nav a {
     max-width: 300px;
     text-align: center;
     margin: 0 auto;
-    display: grid;
-   
+    display: grid;   
 }
     
 ul{
@@ -82,8 +105,7 @@ ul{
     color :hsl(347, 56%, 52%);
     text-align: center;
     margin: auto;
-    text-decoration:none ;
-    
+    text-decoration:none ;    
 }
 .content {
     text-align: justify;
