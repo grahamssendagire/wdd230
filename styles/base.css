@@ -27,10 +27,9 @@ body {
 
 h1 {
   text-align: center;
-    font-size: 10px;
+  font-size: 2rem;
     color:blue;
-    left:80px; top:150px; 
-   
+ 
 }
 
 h3 {
@@ -53,8 +52,8 @@ main section img {
 }
 
 .hero img {
-	width: 150%;
-	height: 150%;
+	width: 30%;
+  height: 10px;
 	object-fit: cover;
 }
   main {
@@ -95,10 +94,14 @@ main section img {
 h2 {
     text-align: center;
     margin:0;
-    color:blue;
-   
-    
+    color:blue;    
 }
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+
 header {
     display: block;
     height: 50px;
@@ -106,6 +109,13 @@ header {
     background-color:rgba(41, 239, 12, 0.424);
     text-align: center;
     margin: auto;
+    
+}
+.hero {
+	margin: 10px auto;
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 300px;
 }
 
 nav a  {
@@ -115,6 +125,7 @@ nav a  {
     width: 200px;
     font-size: 1.2em;
     width: 30%;
+    flex-direction: row;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -197,14 +208,13 @@ a:link {
     color: #0000FF;
   }
   .Title {
-    margin: 0 0 var(--gutterXx) 0;
+    
     padding: 0;
     color: #fff;
     font-size: var(--fontSizeXx);
     font-weight: 400;
-    line-height: var(--lineHeightSm);
     text-align: center;
-    text-shadow: -0.1rem 0.1rem 0.2rem var(--colorPrimary800);
+    
   }
 
   .herolabel p {
@@ -215,9 +225,7 @@ a:link {
     font-family:"Great Vibes", serif;
   }
   .herolabel {
-    position: absolute;
-    top: 30px;
-    left: 30px;
+
     background: radial-gradient(#fff, #4D5B97);
     border: 1px solid rgba(0,0,0,.75);
     padding: 1.5rem;
