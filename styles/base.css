@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 background {
     height: 725px;
     background-color:rgba
@@ -15,9 +15,10 @@ body {
     text-align: center;
     flex-direction: column;
    }
+
+
    .home-title {
     text-align: center;
-    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
     font-size: 5px;
