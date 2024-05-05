@@ -80,6 +80,28 @@
         padding: 1rem;
         text-decoration:none
     }
+    #myButton{
+        font-size: 2rem;
+        background-color: #36454f;;
+        border:none;
+        color: #45e069;
+        cursor:pointer;
+        width:100%;
+        text-align: right;
+        padding: .25rem 2vw;
+    }
+    
+    ul.menuLinks li a{
+        display:block;
+        padding:.75rem 2vw;
+        text-decoration: none;
+    }
+    ul.menuLinks{
+        display:none;
+    }
+    ul.open{
+        display:block;
+    }
     footer{
         display: block;
         margin: 0 auto;
