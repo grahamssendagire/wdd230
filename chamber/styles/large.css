@@ -24,6 +24,13 @@
         padding: 20px;
         border:1px solid rgba(0,0,0,0.1)      
     }
+    #darkBtn{
+        top:  1rem; right: 1rem;
+        width: 24px;
+        background-color:#fff;
+        cursor: pointer;
+        position:absolute
+        }
     h4{
         background-color: #277ded;
         display: block; 

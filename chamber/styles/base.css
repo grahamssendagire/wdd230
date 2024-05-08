@@ -14,6 +14,13 @@ h1{
     box-sizing: border-box;
     padding: 10px;
 }
+#darkBtn{
+    top:  1rem; right: 1rem;
+    width: 24px;
+    background-color:#fff;
+    cursor: pointer;
+    position:absolute
+    }
 #myButton{
     font-size: 2rem;
     background-color: #36454f;;

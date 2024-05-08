@@ -41,7 +41,13 @@
         grid-gap: 20px;
     }
     
-    
+    #darkBtn{
+        top:  1rem; right: 1rem;
+        width: 24px;
+        background-color:#fff;
+        cursor: pointer;
+        position:absolute
+        }
     
     .card1 {
         width: 30%;
