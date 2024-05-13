@@ -2,130 +2,274 @@
 /* Larger views*/
 @media (min-width: 640px){
     *{box-sizing: border-box;}
-    body{
-        font-family: "Roboto",sans-serif;
-        font-weight: 400;
-    }
-    h1{
-    
-        display: flex;
-        display: block;
-        box-sizing: border-box;
-        padding: 10px;
-    }
-    h2{
-        background-color: #277ded;
-        display: block; 
-        padding: 20px;
-        border:1px solid rgba(0,0,0,0.1) 
-        
-    
-    }
-    
-    h3{
-        background-color: #277ded;
-        padding: 20px;
-        border:1px solid rgba(0,0,0,0.1)   
-    }
-    header{
-        background-color: #0ba0ea;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        border:1px solid rgba(0,0,0,0.1);
-    }
-    main {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 20px;
-    }
-    
-    #darkBtn{
-        top:  1rem; right: 1rem;
-        width: 24px;
-        background-color:#fff;
-        cursor: pointer;
-        position:absolute
+    body {
+        font-family : "Sansita", sans-serif;
         }
-    
-    .card1 {
-        width: 30%;
-        height: 10px;
-        box-sizing: border-box;
-        list-style-type: none; 
-        padding: none;
-        flex-direction: column;
-        display:block;
-        color:red;
-        
-      }
-    
-      .card2 {
-        
-        box-sizing: border-box;
-        list-style-type: none; 
-        padding:5em;
-        flex-direction: column;
-        display:block;
-        color:pink;
-      }
-    
-    .map {
-        margin-top: 20px;
-    }
-    nav {
-        background-color: #36454f;
-        margin: 0 auto;
-        max-width: 3000px;
-    }
-    nav ul {
-        display: block;
-        color:#fff;
-        text-align:center;
-        padding: 1rem;
-        text-decoration:none
-    }
-    #myButton{
-        font-size: 2rem;
-        background-color: #36454f;;
-        border:none;
-        color: #45e069;
-        cursor:pointer;
-        width:100%;
-        text-align: right;
-        padding: .25rem 2vw;
-    }
-    
-    ul.menuLinks li a{
-        display:block;
-        padding:.75rem 2vw;
-        text-decoration: none;
-    }
-    ul.menuLinks{
-        display:none;
-    }
-    ul.open{
-        display:block;
-    }
-    footer{
-        display: block;
-        margin: 0 auto;
-        max-width: 3000px;
-        background-color:rgba(235, 24, 133, 0.903);
-        text-align: center;
+        h1.p {
+        font-family : Arial, sans-serif;
+        display : flex;
+        display : block;
+        box-sizing : border-box;
+        padding : 10px;
         }
-    nav a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-       text-decoration:none;
-    }
-    nav ul :hover{
-        border:1px solid rgba(0,0,0,0.1);
-    }
-    .active {
-        color:yellow;
-    }
+        .label {
+        font-family : Arial, sans-serif;
+        font-weight : 700;
+        }
+        #myButton {
+        font-size : 2rem;
+        background-color : #eb1dbf;
+        border : none;
+        color : #45e069;
+        cursor : pointer;
+        width : 100%;
+        text-align : right;
+        padding : 0.25rem 2vw;
+        }
+        #darkBtn {
+        top : 1rem;
+        right : 1rem;
+        width : 24px;
+        background-color : #fff;
+        cursor : pointer;
+        position : absolute;
+        }
+        ul.menuLinks li a {
+        display : block;
+        padding : 0.75rem 2vw;
+        text-decoration : none;
+        }
+        ul.menuLinks {
+        display : none;
+        }
+        ul.open {
+        display : block;
+        }
+        h2 {
+        background-color : #277ded;
+        display : block;
+        padding : 20px;
+        border : rgb(0, 0, 0, 0.1) solid 1px;
+        }
+        h3 {
+        background-color : #277ded;
+        padding : 20px;
+        border : rgb(0, 0, 0, 0.1) solid 1px;
+        }
+        header {
+        background-color : #0ba0ea;
+        align-items : center;
+        display : flex;
+        justify-content : center;
+        padding : 20px;
+        border : rgb(0, 0, 0, 0.1) solid 1px;
+        }
+        main {
+        display : grid;
+        grid-template-columns : repeat(auto-fit,minmax(300px,1fr));
+        gap : 20px;
+        max-width : 670px;
+        margin : 0 auto;
+        align-items : center;
+        }
+        .hero {
+        margin : 10px auto;
+        position : relative;
+        border : rgb(0, 0, 0, 0.1) solid 1px;
+        height : 300px;
+        }
+        .hero img {
+        width : 100%;
+        height : 100%;
+        object-fit : cover;
+        }
+        .herolabel {
+        position : absolute;
+        top : 30px;
+        left : 30px;
+        background : radial-gradient(#fff, #4D5B97);
+        border : rgb(0, 0, 0, 0.75) solid 1px;
+        padding : 1.5rem;
+        box-shadow : 0 0 3rem #fff;
+        opacity : 0.75;
+        }
+        .card1 {
+        width : 30%;
+        height : 10px;
+        box-sizing : border-box;
+        list-style-type : none;
+        flex-direction : column;
+        display : block;
+        color : red;
+        }
+        .card2 {
+        width : 30%;
+        height : 10px;
+        box-sizing : border-box;
+        list-style-type : none;
+        padding : 5em;
+        flex-direction : column;
+        display : block;
+        color : pink;
+        font-family : Arial, sans-serif;
+        }
+        .map {
+        margin-top : 20px;
+        }
+        nav {
+        background-color : #eb1dbf;
+        margin : 0 auto;
+        max-width : 3000px;
+        }
+        nav ul {
+        display : block;
+        color : #fff;
+        text-align : center;
+        padding : 1rem;
+        text-decoration : none;
+        }
+        #visits {
+        color : navy;
+        font-weight : bolder;
+        font-size : larger;
+        }
+        footer {
+        display : block;
+        margin : 0 auto;
+        max-width : 3000px;
+        background-color : rgb(235, 24, 133, 0.903);
+        text-align : center;
+        }
+        nav a {
+        display : block;
+        color : #fff;
+        text-align : center;
+        padding : 1rem;
+        text-decoration : none;
+        }
+        nav ul :hover {
+        border : rgb(0, 0, 0, 0.1) solid 1px;
+        }
+        .active {
+        color : yellow;
+        }
+        @media (min-width: 640px) {
+        nav ul {
+        display : flex;
+        justify-content : space-evenly;
+        }
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2) format('woff2');
+        unicode-range : U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2) format('woff2');
+        unicode-range : U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2) format('woff2');
+        unicode-range : U+1F00-1FFF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxLIzIFKw.woff2) format('woff2');
+        unicode-range : U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxHIzIFKw.woff2) format('woff2');
+        unicode-range : U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format('woff2');
+        unicode-range : U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 100;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzI.woff2) format('woff2');
+        unicode-range : U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
+        unicode-range : U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+        unicode-range : U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+        unicode-range : U+1F00-1FFF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+        unicode-range : U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
+        unicode-range : U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+        unicode-range : U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+        font-family : 'Roboto';
+        font-style : normal;
+        font-weight : 400;
+        font-display : swap;
+        src : url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+        unicode-range : U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        
 }
