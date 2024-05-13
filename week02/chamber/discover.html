@@ -30,92 +30,44 @@
         </ul>
         <div class="close-btn" onclick="closeMenu()">X</div>
     </nav>
-    <main>
-    <div class="hero">
-      <picture> 
-        <source srcset="images/hero_small.webp" media="(max-width:500px)">
-        <source srcset="images/hero_medium.webp" media="(max-width:1000px)">
-        <img src="images/hero_large.webp"alt="hero photo"width="1500"height="750">
-      </picture>
-      <div class="herolabel">
-        <p>Yido Guam Temple</p>
-      </div>
-      <div class="h1">
-        <p>WDD 230 : Web Frontend Development</p>
-      </div>
-    </div>
-        
-        <div class = "card">
-        <section class = "card" id ="card1">
-            <h2>Learning Activities</h2>
-            <ul id = "links">
-              <ui>
-                week 01:
-                <a href = "index.html">LayOut</a>
-                <span>|</span>
-                <a href = "#">media Query</a>
-                <span>|</span>
-                <a href ="#">js pen</a>
-                <span>|</span>
-                </ui>
-            </ul>
-            <ul id = "links">
-                <ui>
-               week 02:
-                <a href = "#">Design</a>
-                <span>|</span>
-                <a href = "#">Menu</a>
-                <span>|</span>
-                <a href ="#">BOM-25</a>
-                <span>|</span>
-                  </ui>
-              </ul>
-              <ul id = "links">
-                <ui>
-                week 03:
-                <a href = "#">Webp</a>
-                <span>|</span>
-                <a href = "#">Lazy</a>
-                <span>|</span>
-                <a href ="#">srcset</a>
-                <span>|</span>
-                <a href ="#">Localstorage</a>
-                </ui>
-              </ul
-        </section>
-        <section class = "card" id = " card 2">
-            <h3>Information</h3>
-           <p>Uganda,Kampala,Temperature:</p>
-           <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-        </section> 
-    </div>
-    <iframe
-     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.
-     82628272124!2d32.71378076795282!3d0.3609633890158372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-     1!3m3!1m2!1s0x177dc7b71409b0a5%3A0xdddaf82b549ec570!2sMukono%2C%20Uganda!5e0!3m2!1sen!2sro!4v1715320288176!5m2!1sen!2sro" 
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+    <main>  
+    <figure>
+      <img src = "images/photo1.webp"loading="lazy"width="600"heigh="400">
+          <figcaption>vibrant-business-environment: Uganda</figcaption>
+      <img src = "images/photo2.webp"loading="lazy"width="600"heigh="400">
+          <figcaption>grazing-ground: Uganda</figcaption>
+      <img src = "images/photo3.webp"loading="lazy"width="600"heigh="400">
+      <figcaption>business-infrastructure: Uganda</figcaption>
+    </figure>
+    <p>📅 Using the Date.time() Timestamp</p>
     </main>
-    <script id ="pageVisits.js">
-      // 1️⃣ Initialize display element variable
-const visitsDisplay = document.querySelector(".visits");
+    <script id ="dateVisits.js">
+// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
+const msToDays = 84600000;
+// today's date
+const theDateToday = new Date();
 
-// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+// initialize display elements
+const todayElement = document.querySelector("#today");
+const christmasElement = document.querySelector("#christmas");
+const christmasDateElement = document.querySelector("#christmasDate");
+const daysElement = document.querySelector("#daysleft");
 
-// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-} else {
-	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+// processing
+const today = Date.now();
+const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
+// check if is the waing days of December, if so ... change to next year.
+if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
+	christmasDate.setFullYear(christmasDate.getFullYear() + 1);
 }
+// find difference between epoch times in ms and convert to days
+let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
 
-// 4️⃣ increment the number of visits by one.
-numVisits++;
+todayElement.textContent = today;
+christmasElement.textContent = christmasDate.getTime();
+christmasDateElement.textContent = christmasDate;
+daysElement.textContent = `${daysleft.toFixed(0)} days`;
 
-// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
-localStorage.setItem("numVisits-ls", numVisits);
-
-todayDisplay.textContent=Date.now();
     </script>
     <footer>
         <p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
@@ -133,7 +85,7 @@ todayDisplay.textContent=Date.now();
     </div>
         <p> Last modified </p>
     </footer>
-    <script src="week01/scripts/getDates.js"></script>
+    <script src="scripts/getDates.js"></script>
     <script src="scripts/ham-burger-menu.js"></script>
     <script src="scripts/darkBtn.js"></script>
     
