@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAHAM SSENDAGIRE-WDD230-Web Front End Development</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico.png"/>
+    <meta name="description" content="GRAHAM SSENDAGIRE-WDD 230-Web Front end Development, W01:Course assignment Portal.">
+    <meta name="author"content="Graham Ssendagire-WDD 230-Web Front end Development, W01:Course assignment Portal.">
+    <link rel= "stylesheet" href = "styles/base.css">
+    <link rel= "stylesheet" href = "styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <img src="images/grahamprofile.webp"alt="Graham Ssendagire profile"width="150"height="100">
+        <span>Graham Ssendagire</span> 
+        <img src="images/darkmode.png"alt="darkmode"id = "darkBtn"width="30"height="30">
+    </header>
+    <nav>
+      <button id="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <ui><a href="index.html">Home</a></ui>
+            <ui><a href="chamber/chamber-site-plan.html">Chamber</a></ui>
+            <ui><a href="#">Site plan</a></ui>
+            <ui><a href="#">Form</a></ui>
+        </ul>
+        <div class="close-btn" onclick="closeMenu()">X</div>
+    </nav>
+    <main>
+    <div class="hero">
+      <picture> 
+        <source srcset="images/hero_small.webp" media="(max-width:500px)">
+        <source srcset="images/hero_medium.webp" media="(max-width:1000px)">
+        <img src="images/hero_large.webp"alt="hero photo"width="1500"height="750">
+      </picture>
+      <div class="herolabel">
+        <p>Yido Guam Temple</p>
+      </div>
+      <div class="h1">
+        <p>WDD 230 : Web Frontend Development</p>
+      </div>
+    </div>
+        
+        <div class = "card">
+        <section class = "card" id ="card1">
+            <h2>Learning Activities</h2>
+            <ul id = "links">
+              <ui>
+                week 01:
+                <a href = "index.html">LayOut</a>
+                <span>|</span>
+                <a href = "#">media Query</a>
+                <span>|</span>
+                <a href ="#">js pen</a>
+                <span>|</span>
+                </ui>
+            </ul>
+            <ul id = "links">
+                <ui>
+               week 02:
+                <a href = "#">Design</a>
+                <span>|</span>
+                <a href = "#">Menu</a>
+                <span>|</span>
+                <a href ="#">BOM-25</a>
+                <span>|</span>
+                  </ui>
+              </ul>
+              <ul id = "links">
+                <ui>
+                week 03:
+                <a href = "#">Webp</a>
+                <span>|</span>
+                <a href = "#">Lazy</a>
+                <span>|</span>
+                <a href ="#">srcset</a>
+                <span>|</span>
+                <a href ="#">Localstorage</a>
+                </ui>
+              </ul
+        </section>
+        <section class = "card" id = " card 2">
+            <h3>Information</h3>
+           <p>Uganda,Kampala,Temperature:</p>
+           <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </section> 
+    </div>
+    <iframe
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63835.
+     82628272124!2d32.71378076795282!3d0.3609633890158372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+     1!3m3!1m2!1s0x177dc7b71409b0a5%3A0xdddaf82b549ec570!2sMukono%2C%20Uganda!5e0!3m2!1sen!2sro!4v1715320288176!5m2!1sen!2sro" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+    </main>
+    <script id ="pageVisits.js">
+      // 1️⃣ Initialize display element variable
+const visitsDisplay = document.querySelector(".visits");
+
+// 2️⃣ Get the stored VALUE for the numVisits-ls KEY in localStorage if it exists. If the numVisits KEY is missing, then assign 0 to the numVisits variable.
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+// 3️⃣ Determine if this is the first visit or display the number of visits. We wrote this example backwards in order for you to think deeply about the logic.
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+// 4️⃣ increment the number of visits by one.
+numVisits++;
+
+// 5️⃣ store the new visit total into localStorage, key=numVisits-ls
+localStorage.setItem("numVisits-ls", numVisits);
+
+todayDisplay.textContent=Date.now();
+    </script>
+    <footer>
+        <p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
+        <p><a href="contactus.html">Contact Us</a></p>
+       <div class="social">
+       <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="fb icon">
+      </a>
+        <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="twitter icon">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="instagram icon">
+    </a>
+    </div>
+        <p> Last modified </p>
+    </footer>
+    <script src="week01/scripts/getDates.js"></script>
+    <script src="scripts/ham-burger-menu.js"></script>
+    <script src="scripts/darkBtn.js"></script>
+    
+</body>
+</html>
