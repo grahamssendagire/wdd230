@@ -9,11 +9,12 @@
             
             padding: 15px;
         }
-        figure:hover {
-            text-align: center;
-            background-color: rgba(248, 237, 237, 0.135);
-            color: #fcf5f514;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
         }
+    
         #darkBtn {
         top : 1rem;
         right : 1rem;

@@ -93,5 +93,9 @@
     display : flex;
     justify-content : space-evenly;
     }
+    .gallery:hover img {
+        transform: scale(1.1);
+    }
+
     }
     
