@@ -5,10 +5,7 @@
     body {
         font-family : "Sansita", sans-serif;
         }
-        figure {
-            
-            padding: 15px;
-        }
+        
         .gallery img {
             width: 100%;
             height: auto;

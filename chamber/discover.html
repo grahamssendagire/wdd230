@@ -34,51 +34,22 @@
     <main> 
         <div class="gallery">
             <figure>
-                <img src = "images/photo1.webp"loading="lazy"width="600"height="400">
-                    <figcaption>vibrant-business-environment: Uganda</figcaption>
-                <img src = "images/photo2.webp"loading="lazy"width="600"height="400">
-                    <figcaption>business-infrastructure:uganda</figcaption>
-                <img src = "images/photo3.webp"loading="lazy"width="600"height="400">
-                <figcaption>grazing-ground: Uganda</figcaption>
-                <img src = "images/photo4.webp"loading="lazy"width="600"height="400">
-                <figcaption>a tourist : Uganda</figcaption>
-                <img src = "images/photo5.webp"loading="lazy"width="600"height="400">
-                <figcaption>Acomputer scientists 1: Uganda</figcaption>
-                <img src = "images/photo6.webp"loading="lazy"width="600"height="400">
-                <figcaption>a plant design engineer : Uganda</figcaption>
-              </figure>
-            
+      <img src = "images/photo1.webp"loading="lazy"width="600"height="400">
+          <figcaption>vibrant-business-environment: Uganda</figcaption>
+      <img src = "images/photo2.webp"loading="lazy"width="600"height="400">
+          <figcaption>business-infrastructure:uganda</figcaption>
+      <img src = "images/photo3.webp"loading="lazy"width="600"height="400">
+      <figcaption>grazing-ground: Uganda</figcaption>
+      <img src = "images/photo4.webp"loading="lazy"width="600"height="400">
+      <figcaption>a tourist : Uganda</figcaption>
+      <img src = "images/photo5.webp"loading="lazy"width="600"height="400">
+      <figcaption>Acomputer scientists 1: Uganda</figcaption>
+      <img src = "images/photo6.webp"loading="lazy"width="600"height="400">
+      <figcaption>a plant design engineer : Uganda</figcaption>
+    </figure>    
         </div> 
-    
     </main>
-    <script id ="dateVisits.js">
-// milliseconds to days constant = 1000 ms/s * 60 s/m * 60 m/h * 24 h/day
-const msToDays = 84600000;
-// today's date
-const theDateToday = new Date();
 
-// initialize display elements
-const todayElement = document.querySelector("#today");
-const christmasElement = document.querySelector("#christmas");
-const christmasDateElement = document.querySelector("#christmasDate");
-const daysElement = document.querySelector("#daysleft");
-
-// processing
-const today = Date.now();
-const christmasDate = new Date(Date.UTC(theDateToday.getFullYear(), 11, 25));
-// check if is the waing days of December, if so ... change to next year.
-if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
-	christmasDate.setFullYear(christmasDate.getFullYear() + 1);
-}
-// find difference between epoch times in ms and convert to days
-let daysleft = (christmasDate.getTime() - Date.now()) / msToDays;
-
-todayElement.textContent = today;
-christmasElement.textContent = christmasDate.getTime();
-christmasDateElement.textContent = christmasDate;
-daysElement.textContent = `${daysleft.toFixed(0)} days`;
-
-    </script>
     <footer>
         <p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
         <p><a href="contactus.html">Contact Us</a></p>
@@ -95,6 +66,8 @@ daysElement.textContent = `${daysleft.toFixed(0)} days`;
     </div>
         <p> Last modified </p>
     </footer>
+    <div id="message"></div>
+    <script src="script/dateVisits.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/ham-burger-menu.js"></script>
     <script src="scripts/darkBtn.js"></script>
