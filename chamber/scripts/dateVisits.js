@@ -1,26 +1,37 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Check if localStorage has last visit date
-    if(localStorage.getItem("lastVisit")) {
-        // Get last visit date from localStorage
-        var lastVisitDate = new Date(localStorage.getItem("lastVisit"));
-        var currentDate = new Date();
+  
 
-        // Calculate the difference in days between visits
-        var timeDifference = currentDate.getTime() - lastVisitDate.getTime();
-        var daysDifference = Math.floor(timeDifference / (1000 * 3600 * 24));
-
-        // Display appropriate message based on days difference
-        var messageElement = document.getElementById("message");
-        if(daysDifference === 0) {
-            messageElement.textContent = "Welcome back! You visited today.";
-        } else if(daysDifference === 1) {
-            messageElement.textContent = "Welcome back! You visited yesterday.";
-        } else {
-            messageElement.textContent = "Welcome back! It's been " + daysDifference + " days since your last visit.";
+        // Function to get the number of days between two dates
+        function getDaysBetweenDates(date1, date2) {
+            const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
+            return Math.round(Math.abs((date1 - date2) / oneDay));
         }
-    } else {
-        // First visit, set current date as last visit date
-        localStorage.setItem("lastVisit", new Date());
-        document.getElementById("message").textContent = "Welcome! This is your first visit.";
-    }
-});
+
+        // Function to display the message based on days since last visit
+        function displayVisitMessage() {
+            const messageElement = document.getElementById('message');
+            const lastVisit = localStorage.getItem('lastVisit');
+            const currentVisit = new Date();
+
+            if (lastVisit) {
+                const lastVisitDate = new Date(lastVisit);
+                const daysBetween = getDaysBetweenDates(currentVisit, lastVisitDate);
+
+                let message = '';
+                if (daysBetween < 1) {
+                    message = 'Welcome back! You visited today.';
+                } else if (daysBetween === 1) {
+                    message = 'Welcome back! You visited yesterday.';
+                } else {
+                    message = `Welcome back! It's been ${daysBetween} days since your last visit.`;
+                }
+                messageElement.innerText = message;
+            } else {
+                messageElement.innerText = 'Welcome! This is your first visit.';
+            }
+
+            // Update the last visit date in localStorage
+            localStorage.setItem('lastVisit', currentVisit.toString());
+        }
+
+        // Call the function to display the visit message
+        displayVisitMessage();

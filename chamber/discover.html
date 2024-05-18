@@ -46,10 +46,52 @@
       <figcaption>Acomputer scientists 1: Uganda</figcaption>
       <img src = "images/photo6.webp"loading="lazy"width="600"height="400">
       <figcaption>a plant design engineer : Uganda</figcaption>
-    </figure>    
-        </div> 
+    </figure>  
+    </section>
+    <section class = "card" id = " card1">
+    <h3>pageVisits</h3>
+    </section> 
+  
+     </div> 
     </main>
+    <div id="message"></div>
+    <script id ="dateVisits.js">
+        // Function to get the number of days between two dates
+        function getDaysBetweenDates(date1, date2) {
+            const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
+            return Math.round(Math.abs((date1 - date2) / oneDay));
+        }
 
+        // Function to display the message based on days since last visit
+        function displayVisitMessage() {
+            const messageElement = document.getElementById('message');
+            const lastVisit = localStorage.getItem('lastVisit');
+            const currentVisit = new Date();
+
+            if (lastVisit) {
+                const lastVisitDate = new Date(lastVisit);
+                const daysBetween = getDaysBetweenDates(currentVisit, lastVisitDate);
+
+                let message = '';
+                if (daysBetween < 1) {
+                    message = 'Welcome back! You visited today.';
+                } else if (daysBetween === 1) {
+                    message = 'Welcome back! You visited yesterday.';
+                } else {
+                    message = `Welcome back! It's been ${daysBetween} days since your last visit.`;
+                }
+                messageElement.innerText = message;
+            } else {
+                messageElement.innerText = 'Welcome! This is your first visit.';
+            }
+
+            // Update the last visit date in localStorage
+            localStorage.setItem('lastVisit', currentVisit.toString());
+        }
+
+        // Call the function to display the visit message
+        displayVisitMessage();
+    </script>
     <footer>
         <p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
         <p><a href="contactus.html">Contact Us</a></p>
@@ -68,7 +110,7 @@
     </footer>
     <div id="message"></div>
     <script src="script/dateVisits.js"></script>
-    <script src="scripts/getDates.js"></script>
+    <script src="getDates.js"></script>
     <script src="scripts/ham-burger-menu.js"></script>
     <script src="scripts/darkBtn.js"></script>
     
