@@ -1,0 +1,177 @@
+body {
+	font-family: Roboto, Arial, sans-serif;
+	margin: 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+	color: navy;
+	border-bottom: 1px solid #bbb;
+}
+
+hr {
+	margin-bottom: 40px;
+}
+
+p {
+	margin: 1rem;
+	display: flex;
+}
+
+.label {
+	display: block;
+	width: 175px;
+	font-weight: 700;
+	color: navy;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.smaller {
+	font-size: smaller;
+}
+#myButton{
+    font-size: 2rem;
+    background-color: #36454f;;
+    border:none;
+    color: #45e069;
+    cursor:pointer;
+    width:100%;
+    text-align: right;
+    padding: .25rem 2vw;
+}
+#darkBtn{
+    top:  1rem; right: 1rem;
+    width: 24px;
+    background-color:#fff;
+    cursor: pointer;
+    position:absolute
+    }
+
+ul.menuLinks li a{
+    display:block;
+    padding:.75rem 2vw;
+    text-decoration: none;
+}
+ul.menuLinks{
+    display:none;
+}
+ul.open{
+    display:block;
+}
+
+
+h2{
+    background-color: #277ded;
+    display: block; 
+    padding: 20px;
+    border:1px solid rgba(0,0,0,0.1) 
+}
+
+h3{
+    background-color:#277ded;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,0.1)   
+}
+header{
+    background-color: #0ba0ea;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border:1px solid rgba(0,0,0,0.1);
+}
+label {
+	display: block;
+	font-weight: 700;
+}
+
+input[type=text], input[type=range], input[type=radio] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#alpha:focus, #fruit:focus {
+	background-color: #eee;
+}
+
+#alpha:valid, #fruit:valid {
+	background-color: #bed;
+}
+#alpha:invalid, #alpha:invalid {
+	background-color: #fff0f3;
+	border: 1px solid red;
+}
+#alpha:invalid::before {
+	content: "❌";
+}
+
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+
+/* Checkbox *******************************************/
+input[type=checkbox] {
+	margin-left: 10px;
+}
+/* Note the enlargement from the standard, tiny checkbox */
+#task {
+	width: 25px;
+	height: 25px;
+}
