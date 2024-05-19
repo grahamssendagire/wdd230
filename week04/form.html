@@ -7,9 +7,7 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico.png"/>
     <meta name="description" content="GRAHAM SSENDAGIRE-WDD 230-Web Front end Development, W01:Course assignment Portal.">
     <meta name="author"content="Graham Ssendagire-WDD 230-Web Front end Development, W01:Course assignment Portal.">
-    <link rel= "stylesheet" href = "styles/base.css" >
-    <link rel= "stylesheet" href = "styles/large.css">
-    <link rel= "stylesheet" href = "styles/form.css">
+    <link rel= "stylesheet" href = "styles/forms.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,51 +30,33 @@
         </ul>
     </nav>
     <main>
+                  <p> Web form</p>
       <form action="/action_page.php">
         <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname">
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
+        <input type="text" id="lname" name="lname">
+        
     
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd"
+        <label for="pwd">Password1:</label>
+        <input type="password1" id="pwd1" name="pwd1"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
         title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
-        <input type="submit">
+        
       
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd"
+        <label for="pwd">Password2:</label>
+        <input type="password2" id="pwd2" name="pwd2"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
         title="password repeated for confirmation">
-        <input type="submit">
+       
      
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"
         pattern="[a-zA-z0-9._%+-]+@byui\.edu$"
         tittle = "please enter a valid email address">
-        <input type="submit">
+       
 
-
-        <div class="star-rating">
-            <input type="radio" name="stars" id="star-a" value="5"/>
-            <label for="star-a"></label>
-      
-            <input type="radio" name="stars" id="star-b" value="4"/>
-            <label for="star-b"></label>
-        
-            <input type="radio" name="stars" id="star-c" value="3"/>
-            <label for="star-c"></label>
-        
-            <input type="radio" name="stars" id="star-d" value="2"/>
-            <label for="star-d"></label>
-        
-            <input type="radio" name="stars" id="star-e" value="1"/>
-            <label for="star-e"></label>
-      </div>
-      
-
-        <label for="r">INPUT: range, min, max, datalist, required</label>
+        <label for="r">Page Rating </label>
         <div id="rangevalue">0</div>
         <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
         <datalist id="rangevalues">
@@ -87,26 +67,9 @@
    <option value="4">4</option>
    <option value="5">5</option>
      </datalist>
-   <div class="ref">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
-   </div>
-<hr>
-<label>INPUT: radio, required, common name, altered look with CSS stars</label>
-<div class="stars">
-<input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-<input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-<input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-<input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-<input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-</div>
-<div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
-<hr>
-<div class="vcentered">
-<label for="task" data-content="Completed the Module" class="inline">INPUT: checkbox, CSS size</label>
-<input type="checkbox" id="task" name="task" value="task">
-</div>
-<button type="button">Submit here </button>
+   <input type="submit" value="Submit My Review">
 </form>
+<div id = "feedback"></div>
 </main>
    <footer>
         <p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
@@ -129,5 +92,6 @@
     <script src="scripts/ham-burger-menu.js"></script>
     <script src="scripts/darkBtn.js"></script>
     <script src="scripts/formValidation.js"></script>  
+    <script src="scripts/form.js"></script> 
 </body>
 </html>
