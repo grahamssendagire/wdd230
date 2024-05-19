@@ -7,11 +7,11 @@ h1 {
 	font-size: 1.75rem;
 	color: navy;
 	border-bottom: 1px solid #bbb;
-}
+   }
 
 hr {
 	margin-bottom: 40px;
-}
+   }
 
 p {
 	margin: 1rem;
@@ -19,13 +19,7 @@ p {
     font-family: Roboto, Arial, sans-serif;
 	margin: 1rem;
 }
-
-
-    
-	
-
 #feedback{color:red;}
-
 
 #myButton{
     font-size: 2rem;
