@@ -1,231 +1,168 @@
-
-
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-body {
-	font-family: Roboto, helvetica, sans-serif;
-	background-color: #ddd;
-}
-
-main {
-	margin: 20px auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #fff;
-	max-width: 500px;
-}
-
-
-form {
-	margin: 20px;
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-
-h1 {
-	margin: 20px;
-	font-size: 1.5rem;
-}
-
-input,
-textarea,
-select {
-	padding: 10px;
-	margin-bottom: 20px;
-	border: 0;
-	border-bottom: 1px solid navy;
-	font-size: 1.1rem;
-}
-
-button {
-	padding: 10px;
-	font-size: 1.2rem;
-	font-weight: 700;
-   
-}
-
-label {
-	color: navy;
-	font-size: 16px;
-}
-
-input:focus,
-textarea:focus {
-	outline: none;
-}
-
-input::placeholder {
-	font-size: 13px;
-}
-
-#feedback {
-	visibility: none;
-	margin: 10px;
-	padding: 0.5rem;
-	color: red;
-}
-
-/* input[required] ^ label::after {
-	font-size: 10px;
-	content: " *️⃣";
-} */
-
-/*.req::after {
-	font-size: 10px;
-	content: " *️⃣";
-}
-
-.smaller {
-	font-size: 11px;
-	position: absolute;
-	top: -10px;
-	right: 10px;
-}
-
-@keyframes shaketext {
-	25% {
-		transform: translateX(3px);
-	}
-	50% {
-		transform: translateX(-3px);
-	}
-	75% {
-		transform: translateX(3px);
-	}
-} */
-
-h1 {
-	font-size: 1.75rem;
-	color: navy;
-	border-bottom: 1px solid #bbb;
-   }
-
-hr {
-	margin-bottom: 40px;
-   }
-
-p {
-	margin: 1rem;
-	display: flex;
-    font-family: Roboto, Arial, sans-serif;
-	margin: 1rem;
-}
-#feedback{color:red;}
-
-#myButton{
-    font-size: 2rem;
-    background-color: #36454f;;
-    border:none;
-    color: #45e069;
-    cursor:pointer;
-    width:100%;
-    text-align: right;
-    padding: .25rem 2vw;
-}
-#darkBtn{
-    top:  1rem; right: 1rem;
-    width: 24px;
-    background-color:#fff;
-    cursor: pointer;
-    position:absolute
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
     }
-    #button{
-        background-color:#19e329;
+    body {
+    font-family : Roboto, helvetica, sans-serif;
+    background-color : #ddd;
     }
-
-ul.menuLinks li a{
-    display:block;
-    padding:.75rem 2vw;
-    text-decoration: none;
-}
-ul.menuLinks{
-    display:none;
-}
-ul.open{
-    display:block;
-}
-
-
-h2{
-    background-color: #277ded;
-    display: block; 
-    padding: 20px;
-    border:1px solid rgba(0,0,0,0.1) 
-}
-
-h3{
-    background-color:#277ded;
-    padding: 20px;
-    border:1px solid rgba(0,0,0,0.1)   
-}
-header{
-    background-color: #0ba0ea;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    border:1px solid rgba(0,0,0,0.1);
-}
-label {
-	display: block;
-	font-weight: 700;
-    padding: 0.5em;
-}
-
-label.pwd {
-	display: block;
-	font-weight: 700;
-    padding: 0.5em;
-}
-input[type=text], input[type=range], input[type=radio] {
-	margin: 1rem;
-	padding: 0.5em;
-}
-
-#alpha:focus, #fruit:focus {
-	background-color: #eee;
-}
-
-#alpha:valid, #fruit:valid {
-	background-color: #bed;
-}
-#alpha:invalid, #alpha:invalid {
-	background-color: #fff0f3;
-	border: 1px solid red;
-}
-#alpha:invalid::before {
-	content: "❌";
-}
-
-
-#r {
-	width: 180px;
-	margin-bottom: 0;
-}
-
-#rangevalue {
-	font-size: 2rem;
-	color: navy;
-}
-
-#rangevalues {
-	display: flex;
-	margin: 0 0 0 25px;
-	width: 200px;
-}
-
-#rangevalues option {
-	flex: 1 1 auto;
-}
-
-
-/* stars */
-input[type="radio"] {
-	display: none;
-	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
-}
+    main {
+    margin : 20px auto;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    background-color : #fff;
+    max-width : 500px;
+    }
+    form {
+    margin : 20px;
+    display : flex;
+    flex-direction : column;
+    position : relative;
+    }
+    h1 {
+    margin : 20px;
+    font-size : 1.5rem;
+    }
+    input, textarea, select {
+    padding : 10px;
+    margin-bottom : 20px;
+    border : 0;
+    border-bottom : 1px solid navy;
+    font-size : 1.1rem;
+    }
+    button {
+    padding : 10px;
+    font-size : 1.2rem;
+    font-weight : 700;
+    }
+    label {
+    color : navy;
+    font-size : 16px;
+    }
+    input:focus, textarea:focus {
+    outline : none;
+    }
+    input::placeholder {
+    font-size : 13px;
+    }
+    #feedback {
+    margin : 10px;
+    padding : 0.5rem;
+    color : red;
+    }
+    h1 {
+    font-size : 1.75rem;
+    color : navy;
+    border-bottom : 1px solid #bbb;
+    }
+    hr {
+    margin-bottom : 40px;
+    }
+    p {
+    margin : 1rem;
+    display : flex;
+    font-family : Roboto, Arial, sans-serif;
+    margin : 1rem;
+    }
+    #feedback {
+    color : red;
+    }
+    #myButton {
+    font-size : 2rem;
+    background-color : #36454f;
+    border : none;
+    color : #45e069;
+    cursor : pointer;
+    width : 100%;
+    text-align : right;
+    padding : 0.25rem 2vw;
+    }
+    #darkBtn {
+    top : 1rem;
+    right : 1rem;
+    width : 24px;
+    background-color : #fff;
+    cursor : pointer;
+    position : absolute;
+    }
+    #button {
+    background-color : #19e329;
+    }
+    ul.menuLinks li a {
+    display : block;
+    padding : 0.75rem 2vw;
+    text-decoration : none;
+    }
+    ul.menuLinks {
+    display : none;
+    }
+    ul.open {
+    display : block;
+    }
+    h2 {
+    background-color : #277ded;
+    display : block;
+    padding : 20px;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    }
+    h3 {
+    background-color : #277ded;
+    padding : 20px;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    }
+    header {
+    background-color : #0ba0ea;
+    align-items : center;
+    display : flex;
+    justify-content : center;
+    padding : 20px;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    }
+    label {
+    display : block;
+    font-weight : 700;
+    padding : 0.5em;
+    }
+    label.pwd {
+    display : block;
+    font-weight : 700;
+    padding : 0.5em;
+    }
+    input[type="text"], input[type="range"], input[type="radio"] {
+    margin : 1rem;
+    padding : 0.5em;
+    }
+    #alpha:focus, #fruit:focus {
+    background-color : #eee;
+    }
+    #alpha:valid, #fruit:valid {
+    background-color : #bed;
+    }
+    #alpha:invalid, #alpha:invalid {
+    background-color : #fff0f3;
+    border : red solid 1px;
+    }
+    #alpha:invalid::before {
+    content : "❌";
+    }
+    #r {
+    width : 180px;
+    margin-bottom : 0;
+    }
+    #rangevalue {
+    font-size : 2rem;
+    color : navy;
+    }
+    #rangevalues {
+    display : flex;
+    margin : 0 0 0 25px;
+    width : 200px;
+    }
+    #rangevalues option {
+    flex : 1 1 auto;
+    }
+    input[type="radio"] {
+    display : none;
+    position : relative;
+    caret-color : rgb(0, 0, 0, 0);
+    }
