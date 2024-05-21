@@ -7,17 +7,16 @@
     font-family : "Sansita", sans-serif;
     }
     h1.p {
-        font-family : Arial, sans-serif;
-        display : flex;
-        display : block;
-        box-sizing : border-box;
-        padding : 10px;
-        }
-        .label {
-        font-family : Arial, sans-serif;
-        font-weight : 700;
-        }
-   
+    font-family : Arial, sans-serif;
+    display : flex;
+    display : block;
+    box-sizing : border-box;
+    padding : 10px;
+    }
+    .label {
+    font-family : Arial, sans-serif;
+    font-weight : 700;
+    }
     #darkBtn {
     top : 1rem;
     right : 1rem;
@@ -48,129 +47,104 @@
     display : block;
     }
     ul.menuLinks li a {
-        display : block;
-        padding : 0.75rem 2vw;
-        text-decoration : none;
-        }
-     ul.menuLinks {
-        display : none;
-        }
-     ul.open {
-        display : block;
-        }
-     h2 {
-        background-color : #277ded;
-        display : block;
-        padding : 20px;
-        border : rgb(0, 0, 0, 0.1) solid 1px;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: Roboto, helvetica, sans-serif;
-            background-color: #ddd;
-        }
-        
-        main {
-            margin: 20px auto;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-            max-width: 500px;
-        }
-        
-        header,
-        footer {
-            height: 30px;
-            background-color: #444;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-        }
-        
-        form {
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-        
-        h1 {
-            margin: 20px;
-            font-size: 1.5rem;
-        }
-        
-        input,
-        textarea,
-        select {
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 0;
-            border-bottom: 1px solid navy;
-            font-size: 1.1rem;
-        }
-        
-        button {
-            padding: 10px;
-            font-size: 1.2rem;
-            font-weight: 700;
-        }
-        
-        label {
-            color: navy;
-            font-size: 16px;
-        }
-        
-        input:focus,
-        textarea:focus {
-            outline: none;
-        }
-        
-        input::placeholder {
-            font-size: 13px;
-        }
-        
-        #formmessage {
-            visibility: none;
-            margin: 10px;
-            padding: 0.5rem;
-            color: red;
-        }
-        
-        #keyphrase:invalid {
-            background-color: #fff0f3;
-            animation: shaketext 500ms;
-        }
-        
-        /* input[required] ^ label::after {
-            font-size: 10px;
-            content: " *️⃣";
-        } */
-        
-        .req::after {
-            font-size: 10px;
-            content: " *️⃣";
-        }
-        
-        .smaller {
-            font-size: 11px;
-            position: absolute;
-            top: -10px;
-            right: 10px;
-        }
-        
-        @keyframes shaketext {
-            25% {
-                transform: translateX(3px);
-            }
-            50% {
-                transform: translateX(-3px);
-            }
-            75% {
-                transform: translateX(3px);
-            }
-        }
+    display : block;
+    padding : 0.75rem 2vw;
+    text-decoration : none;
+    }
+    ul.menuLinks {
+    display : none;
+    }
+    ul.open {
+    display : block;
+    }
+    h2 {
+    background-color : #277ded;
+    display : block;
+    padding : 20px;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    }
+    * {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    }
+    body {
+    font-family : Roboto, helvetica, sans-serif;
+    background-color : #ddd;
+    }
+    main {
+    margin : 20px auto;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    background-color : #fff;
+    max-width : 500px;
+    }
+    header, footer {
+    height : 30px;
+    background-color : #444;
+    border : rgb(0, 0, 0, 0.2) solid 1px;
+    }
+    form {
+    margin : 20px;
+    display : flex;
+    flex-direction : column;
+    position : relative;
+    }
+    h1 {
+    margin : 20px;
+    font-size : 1.5rem;
+    }
+    input, textarea, select {
+    padding : 10px;
+    margin-bottom : 20px;
+    border : 0;
+    border-bottom : 1px solid navy;
+    font-size : 1.1rem;
+    }
+    button {
+    padding : 10px;
+    font-size : 1.2rem;
+    font-weight : 700;
+    }
+    label {
+    color : navy;
+    font-size : 16px;
+    }
+    input:focus, textarea:focus {
+    outline : none;
+    }
+    input::placeholder {
+    font-size : 13px;
+    }
+    #formmessage {
+    margin : 10px;
+    padding : 0.5rem;
+    color : red;
+    }
+    #keyphrase:invalid {
+    background-color : #fff0f3;
+    animation : shaketext 500ms;
+    }
+    .req::after {
+    font-size : 10px;
+    content : " *️⃣";
+    }
+    .smaller {
+    font-size : 11px;
+    position : absolute;
+    top : -10px;
+    right : 10px;
+    }
+    @keyframes shaketext {
+    25% {
+    transform : translateX(3px);
+    }
+    50% {
+    transform : translateX(-3px);
+    }
+    75% {
+    transform : translateX(3px);
+    }
+    }
     header {
     background-color : #0ba0ea;
     align-items : center;
@@ -185,9 +159,9 @@
     gap : 20px;
     }
     img {
-        max-width: 100%;
-        max-height:100%;
-        padding: 15px;
+    max-width : 100%;
+    max-height : 100%;
+    padding : 15px;
     }
     nav {
     background-color : #36454f;
@@ -202,45 +176,44 @@
     text-decoration : none;
     }
     .hero img {
-        width : 100%;
-        height : 100%;
-        object-fit : cover;
-        }
-     .herolabel {
-        position : absolute;
-        top : 30px;
-        left : 30px;
-        background : radial-gradient(#fff, #4D5B97);
-        border : rgb(0, 0, 0, 0.75) solid 1px;
-        padding : 1.5rem;
-        box-shadow : 0 0 3rem #fff;
-        opacity : 0.75;
-        }
-        #visits {
-            color : navy;
-            font-weight : bolder;
-            font-size : larger;
-            }
-            
-         nav a {
-            display : block;
-            color : #fff;
-            text-align : center;
-            padding : 1rem;
-            text-decoration : none;
-            }
-        nav ul :hover {
-            border : rgb(0, 0, 0, 0.1) solid 1px;
-            }
-     .card1 {
-        width : 30%;
-        height : 10px;
-        box-sizing : border-box;
-        list-style-type : none;
-        flex-direction : column;
-        display : block;
-        color : red;
-        }
+    width : 100%;
+    height : 100%;
+    object-fit : cover;
+    }
+    .herolabel {
+    position : absolute;
+    top : 30px;
+    left : 30px;
+    background : radial-gradient(#fff, #4D5B97);
+    border : rgb(0, 0, 0, 0.75) solid 1px;
+    padding : 1.5rem;
+    box-shadow : 0 0 3rem #fff;
+    opacity : 0.75;
+    }
+    #visits {
+    color : navy;
+    font-weight : bolder;
+    font-size : larger;
+    }
+    nav a {
+    display : block;
+    color : #fff;
+    text-align : center;
+    padding : 1rem;
+    text-decoration : none;
+    }
+    nav ul :hover {
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    }
+    .card1 {
+    width : 30%;
+    height : 10px;
+    box-sizing : border-box;
+    list-style-type : none;
+    flex-direction : column;
+    display : block;
+    color : red;
+    }
     footer {
     display : block;
     margin : 0 auto;
@@ -249,24 +222,24 @@
     text-align : center;
     }
     .card2 {
-        width : 30%;
-        height : 10px;
-        box-sizing : border-box;
-        list-style-type : none;
-        padding : 5em;
-        flex-direction : column;
-        display : block;
-        color : pink;
-        font-family : Arial, sans-serif;
-        }
-     .map {
-        margin-top : 20px;
-        }
-     nav {
-        background-color : #eb1dbf;
-        margin : 0 auto;
-        max-width : 3000px;
-        }
+    width : 30%;
+    height : 10px;
+    box-sizing : border-box;
+    list-style-type : none;
+    padding : 5em;
+    flex-direction : column;
+    display : block;
+    color : pink;
+    font-family : Arial, sans-serif;
+    }
+    .map {
+    margin-top : 20px;
+    }
+    nav {
+    background-color : #eb1dbf;
+    margin : 0 auto;
+    max-width : 3000px;
+    }
     nav a {
     display : block;
     color : #fff;
@@ -280,15 +253,14 @@
     .active {
     color : yellow;
     }
-
     @media (min-width: 640px) {
     nav ul {
     display : flex;
     justify-content : space-evenly;
     }
     .gallery:hover img {
-        transform: scale(1.1);
+    transform : scale(1.1);
     }
-
     }
+    
     
