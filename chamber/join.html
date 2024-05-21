@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELCOME TO KAMPALA CHAMBER OF COMMERCE PROJECT</title>
+  <link  rel="shortcut icon" type="image/png" href="images/favicon.ico.png"/>
+  <meta name="description" content="GRAHAM SSENDAGIRE-WDD 230-Web Front end Development, W01:Course assignment chamber.">
+  <meta name="author"content="Graham Ssendagire-WDD 230-Web Front end Development, W01:Course assignment Portal.">
+   <link rel = "stylesheet" href = "styles/base.css">
+   <link rel = stylesheet" href = "styles/large.css">.
+</head>
+
+<body>
+  <header>
+    <h1>KAMPALA CHAMBER OF COMMERCE</h1>
+    <p>Graham Ssendagire,WDD 230-01</p>
+    <!-- In the header above, add the name of your site, your name and class number. For example if you are in section 3 you would put WDD 130-03 -->
+    <img src="week01/images/darkmode.webp"alt="darkmode"id = "darkBtn"width="30"height="30">
+  </header>
+    
+    <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+    <nav>
+      <button id ="myButton">&#9776;</button>
+        <ul class="menuLinks">
+            <ui><a href="index.html">Home</a></ui>
+            <ui><a href="discover.html">Discover</a></ui>
+            <ui><a href="#">Directory</a></ui>
+            <ui><a href="#">Join</a></ui>
+        </ul>
+        <div class="close-btn" onclick="closeMenu()">X</div>
+    </nav>
+    <main>
+      <main>
+        <header>
+          <h1>join Us</h1>
+        </header>
+        <div id="formmessage"></div>
+       
+        <form method="get">
+          <p class="smaller">*️⃣ Indicates a required field</p>
+      
+          <label for="firstname" class="req">firstname</label>
+          <input type="text" id="fname" name="firstname" required placeholder="Please enter your full name">
+          <label for="lastname" class="req">lastname</label>
+          <input type="text" id="lname" name="lastname" required placeholder="Please enter your full name">
+
+          <label for="position">position</label>
+          <input type="pos" id="position" name="position">
+
+          <label for="email" class="req">Email Address</label>
+          <input type="email" id="email" name="email" required placeholder="Please use your school email address">
+
+          <label for="password1">Your password</label>
+          <input type="text" id="pwd1" name="password1" pattern="[a-zA-Z -]{6,}" placeholder="At least six characters long. No numbers.">
+          <label for="password2">Re-enter Your password</label>
+          <input type="text" id="pwd2" name="password2">
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="comments" class="req">organisastion description</label>
+          <textarea id="comments" name="comments" required></textarea>
+          <button id="btnSubmit" type="submit">Submit <form action=""></form></button>
+          <input type="hidden" value="43aster">
+        </form>
+      </main>
+  </main>
+  <footer>
+    <p><a href="contactus.html">Contact Us</a></p>
+   <div class="social">
+   <a href="https://facebook.com" target="_blank">
+    <img src="images/facebook.png" alt="fb icon">
+  </a>
+    <a href="https://twitter.com" target="_blank">
+    <img src="images/twitter.png" alt="twitter icon">
+</a>
+<a href="https://instagram.com" target="_blank">
+    <img src="images/instagram.png" alt="instagram icon">
+</a>
+</div>
+<p> &copy; 2024-Graham Ssendagire Uganda Kampala</p>
+ <p> Last modification </p>
+</footer>
+
+<script src="scripts/ham-burger-menu.js"></script>
+<script src="scripts/darkBtn.js"></script>   
+<script src="scripts/getDates.js"></script> 
+</body>
+
+</html>
