@@ -6,7 +6,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const description = document.querySelector('#description');
 const town = document.querySelector('#town');
 //creating required varriables for the url
-const myKey = "75f56b25e7e5959aaa42e35e924d9aab"
+const myKey = "f98693539682e5987e2754b8f37f534d"
 const myLat = "0.31689"
 const myLong = "32.58540"
 //creating a URL path using templete literals,
