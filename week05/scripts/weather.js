@@ -20,13 +20,17 @@ async function apiFetch() {
       if(response.ok) {
         const data = await response.json();
         console.log(data); // testing only
-        // displayResults(data); //uncomment when ready
+         displayResults(data); //uncomment when ready
       } else{
           throw Error(await response.text());
       }
       } catch (error) {
           console.log(error);
-    } 
+        } 
+        //display the jason data on my web page.
+    function displayResult(data){
+        console.log("hello")
+    }
 }
 apiFetch();
 
