@@ -6,13 +6,14 @@ const weatherIcon = document.querySelector('#weather-icon');
 const description = document.querySelector('#description');
 const town = document.querySelector('#town');
 //creating required varriables for the url
-const myKey = "7c6867c228ad11bd0f9f11bfd072e77c"
-const myLat = "0.31689"
-const myLong = "32.58540"
+const myKey = 'eebcc36575ef71b5ff911dc89b45a777'
+const myLat = '0.31689'
+const myLong = '32.58540'
 //creating a URL path using templete literals,
 //Declare a const variable named "url" and assign it a valid URL string as coppied from the openweathermap.org.
 
-const myURL = '//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial';
+const myURL = 'https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial';
+// https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API key}
 // Try to grab the current Weather Data
 async function apiFetch() {
     try{
@@ -33,6 +34,7 @@ async function apiFetch() {
     }
 }
 apiFetch();
+
 
 
 
