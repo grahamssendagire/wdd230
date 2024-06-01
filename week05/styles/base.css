@@ -3,6 +3,28 @@
     padding : 0;
     box-sizing : border-box;
     }
+
+    .card{
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid #5d5f67;
+        color:blanchedalmond
+       }
+
+    .card h2{
+        margin: .3rem;
+         
+    }
+    .card #description{
+        margin: .3rem;
+        text-transform: capitalize;
+       
+    }
+    .card #temperature{
+        margin: .3rem;
+        font-size: 2rem;
+        
+    }
     body {
     font-family : "Sansita", sans-serif;
     }

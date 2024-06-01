@@ -1,10 +1,10 @@
 // Selecting the HTML element in the document ,
 // first select all of the HTML elements, 
 // that will need to be manipulated and assign them to const variables.
-const temperature = document.querySelector('#temperature');
-const weatherIcon = document.querySelector('#weather-icon');
-const description = document.querySelector('#description');
-const town = document.querySelector('#town');
+const myTemperature = document.querySelector('#temperature');
+const myDescription = document.querySelector('#description');
+const myTown = document.querySelector('#town');
+const myGraphic = document.querySelector('#graphic');
 //creating required varriables for the url
 const myKey = 'eebcc36575ef71b5ff911dc89b45a777'
 const myLat = '0.31689'
