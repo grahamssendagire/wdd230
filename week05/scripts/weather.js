@@ -12,8 +12,7 @@ const myLong = '32.58540'
 //creating a URL path using templete literals,
 //Declare a const variable named "url" and assign it a valid URL string as coppied from the openweathermap.org.
 
-const myURL = 'https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial';
-// https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API key}
+const myURL = ':http//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial';
 // Try to grab the current Weather Data
 async function apiFetch() {
     try{
