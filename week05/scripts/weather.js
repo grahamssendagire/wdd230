@@ -30,6 +30,10 @@ async function apiFetch() {
         //display the jason data on my web page.
     function displayResult(data){
         console.log("hello")
+        myTown.innerHTML=data.name
+        myDescription.innerHTML=data.weather[0].description
+        myTemperature.innerHTML='${data.main.temp}&deg;F';
+        const iconscr='https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png'
         
     }
 }
